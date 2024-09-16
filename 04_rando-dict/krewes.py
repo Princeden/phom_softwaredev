@@ -21,11 +21,7 @@ krewes = {
                 'JESSICA','JACKIE','WEN YUAN','YINWEI','TIFFANY','JAYDEN DANIEL','PRINCEDEN' 
               ]
          }
-devo_period = random.randint(0, 1)
-if devo_period == 1:
-    index = random.randint(0, len(krewes[4]) - 1)
-    print(krewes[4][index])
-else:
-    index = random.randint(0, len(krewes[5]) - 1)
-    print(krewes[5][index])
+devo_period = random.randint(4, 5)
+print(krewes[devo_period][random.randint(0, len(krewes[devo_period]) - 1)])
+
     
