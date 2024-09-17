@@ -23,5 +23,18 @@ krewes = {
          }
 devo_period = random.randint(4, 5)
 print(krewes[devo_period][random.randint(0, len(krewes[devo_period]) - 1)])
-
-    
+print(1 / (len(krewes[4]) + len(krewes[5])))
+## runs the code n times then returns the frequency of each name as a percentage
+def validate(n):
+    devo_p = {}
+    for n in range (0, n):
+        devo_period = random.randint(4, 5)
+        devo = krewes[devo_period][random.randint(0, len(krewes[devo_period]) - 1)]
+        if devo in devo_p.keys():
+            devo_p[devo] += 1
+        else:
+            devo_p[devo] = 0
+    for devo in devo_p.keys():
+        devo_p[devo] = devo_p[devo] / n
+        print(str(devo) + ": " + str(devo_p[devo]))
+validate(1000000)
