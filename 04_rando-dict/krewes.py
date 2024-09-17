@@ -1,11 +1,11 @@
 """
 Princeden Hom
-<TNPG>
+Sizzle
 SoftDev
-K<nn> -- <Title/Topic/Summary... (Aim for concision, brevity, CLARITY. Write to your future self...)>
-<yyyy>-<mm>-<dd>
-time spent: <elapsed time in hours, rounded to nearest tenth>
- """
+K04 -- Python dictionairies and random selection
+2024-09-15
+time spent: .1
+"""
 import random
 krewes = {
            4: [ 
