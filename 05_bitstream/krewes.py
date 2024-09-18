@@ -9,4 +9,4 @@ for ducky in ducky_group:
         devos[ducky[1]] = list((ducky[0], ducky[2]))
 devo = random.choice(list(devos.keys()))
 
-print(devo + ": " + devos[devo][0] + " " + devos[devo][1])
+print("Devo: " + devo + "\nPeriod: " + devos[devo][0] + "\nDucky: " + devos[devo][1])
