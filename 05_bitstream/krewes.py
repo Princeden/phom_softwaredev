@@ -1,3 +1,11 @@
+"""
+Princeden Hom
+Sizzle
+SoftDev
+K05 -- Reading and Parsing Text in Python
+2024-09-17
+time spent: .1
+"""
 import random
 f = open("krewes.txt")
 all_duckies = f.read()

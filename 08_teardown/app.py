@@ -1,22 +1,30 @@
-# your heading here
-
+"""
+Princeden Hom
+PD - Princeden Hom and Danny Huang (5)
+SoftDev
+K08 -- Tear Down!
+2024-09-20
+time spent: .1
+"""
 '''
 DISCO:
+- running the program creates a website on a local serveer
+- we were wrong and no hablo queso appears on that website
 <note any discoveries you made here... no matter how small!>
 
 QCC:
-0. 
-1. 
-2. 
-3. 
-4. 
-5. 
+0. Java creating classes
+1. file directories, and html pages
+2. to the terminal?
+3. location in memory?
+4. unsure, but likely not since it just returns
+5. java methods
  ...
 
 INVESTIGATIVE APPROACH:
-<Your concise summary of how
- you and your team set about
- "illuminating the cave of ignorance" here...>
+- we tried to use our previous knowledge of java, and how return/ print functions worked when printing objects
+as well as trying to figure out what app.route exactly did
+
 '''
 
 
