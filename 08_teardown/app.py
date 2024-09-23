@@ -10,16 +10,15 @@ time spent: .1
 DISCO:
 - running the program creates a website on a local serveer
 - we were wrong and no hablo queso appears on that website
-<note any discoveries you made here... no matter how small!>
+
 
 QCC:
-0. Java creating classes
-1. file directories, and html pages
-2. to the terminal?
-3. location in memory?
-4. unsure, but likely not since it just returns
-5. java methods
- ...
+0. I believe I have seen similar syntax in java, when we assign function values to variables. Name would be a parameter.
+1. I have seen it used in the terminal for file directories.
+2. This would print in the shell below.
+3. It may print the value of the variable name.
+4. It may appear in the terminal/shell, as this is usually where returned values would go.
+5. We have seen this be used in Java, specifically for inheritance. When the methods of one file are not in the main file, you must call "file name"."function name"
 
 INVESTIGATIVE APPROACH:
 - we tried to use our previous knowledge of java, and how return/ print functions worked when printing objects
