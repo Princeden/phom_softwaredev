@@ -1,8 +1,13 @@
 ## K11: Some Things Never Change
 ### Due: 2024-09-26r before class
 
+Predictions 
+- Return the foo page w/ a random
+-i don't think accessing the html through the url and not flask is possible and I will get an error bc it isn't loaded explicitly onto the server
+Results
+-the link does work and you get the html page
+-if you run flask and route it to static/foo the return overrides whatever what on the html and all you get is the ranom float
 Your Trio Mission:
-
 1. In a new directory in your workshop, save a copy of the demo for using flask to serve static files.
 1. As a team...
   - Familiarize yourself with the app directory structure and the files' content.
@@ -10,8 +15,8 @@ Your Trio Mission:
   - Predict expected behaviors.
   - Spin up your website on localhost and reconcile behavior with prediction.
   - Record your notes in `readme` in app's root directory.
-Predictions 
-- Return the foo page w/ a random
+
+
 1. Once your team has done this, compose and store another html file named `fixie.html` (containing some html to render your team name and roster) so that flask can serve it staticly.
 
 <br>
