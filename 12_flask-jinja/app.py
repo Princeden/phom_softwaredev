@@ -4,6 +4,9 @@
 
 """
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ {{}} double brackets are used for content that is rendered onto the page when the html page is loaded {% %} single brackets bounded with percents are used for lines of code that are run when the page is rendered. 
+You have to manually tell when to end the for loop, and the for loop also renders anything in it, including any html text as well as content in double braces
+If you use a single bracket with 
 Q0:
 It would give an error if you tried to access /my_foist_template through
 local_host:5000/my_foist_template
@@ -26,7 +29,6 @@ to the list coll = [0,1,1,2,3,5,8]
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 from flask import Flask, render_template
 app = Flask(__name__)
-
 @app.route("/")
 def hello_world():
     return "No hablo queso!"
@@ -46,4 +48,4 @@ def test_tmplt():
 
 if __name__ == "__main__":
     app.debug = True
-    app.run()
+    app.run(port=5001)
