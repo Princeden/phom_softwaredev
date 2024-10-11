@@ -19,26 +19,29 @@
 <html>
 
   <head>
-    <title> LOGIN PAGE </title>
+    <title> RESPONSE PAGE </title>
   </head>
 
   <body>
     <h1>
-        TBD, Pd 5
-    </h1>
-    <h2>
+      TBD, Pd 5
+  </h2>
+    <h1>
       Howdy, friends!
     </h2>
 
 
     <h3>
-      Enter your username below to proceed.
+      Your username is {{username}}
+
+<br>
+    You used a {{method}} method
     </h3>
-    <form action="/auth" method="GET">
-      <input type="text" name="username">
-      <input type="submit" name="sub1">
-    </form>
-    <br>
+    <p>
+      There are two html methods - get and post. If you used GET, you'll notice that your information is visible in the browser URL, as the GET method changes the url and flask processes that. If you used POST, data was sent directly instead of modifying the url.
+    </p>
+    
+    
   </body>
 
 </html>
