@@ -56,6 +56,7 @@ Time spent: 1
 <p>The XY grid is built to adapt to different screen sizes, and for any page the width of the entire page will be 12 cells.
    So having a medium-6 and a large-4 allows you to
   control how large each cell will be on a different device. The 12/6/4 cell will be 6 cells wide on a medium page and 4 cells wide on a large page. You can see the medium-6 size change at play if you shrink the window from full screen.</p>
+  On a small screen it will default full width 12 cells and the cells will stack on top. 
 </div>
 
 <h4>With grids you can have both padding and margins</h3>
@@ -78,4 +79,21 @@ Time spent: 1
   <div class="cell medium-6 large-8" style="background-color: darkgoldenrod;">12/6/8 cells</div>
 </div>
 <br>
-<h4>
+<h4>Autosizing </h4>
+
+
+<div class="grid-x grid-margin-x">
+  <div class="cell small-4">4 cells</div>
+  <div class="cell auto">Whatever's left!</div>
+</div>
+
+<div class="grid-x grid-margin-x">
+  <div class="cell small-4">4 cells</div>
+  <div class="cell auto">Whatever's left!</div>
+  <div class="cell auto">Whatever's left!</div>
+</div>
+
+<div class="grid-x grid-margin-x">
+  <div class="cell shrink">Shrink!</div>
+  <div class="cell auto">Expand!</div>
+</div>
