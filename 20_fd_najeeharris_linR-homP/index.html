@@ -1,0 +1,81 @@
+
+<!doctype html>
+<!--
+Princeden Hom, Raymond Lin
+Team Najeeharris
+Softdev
+20_framework-abbreviation
+2024-11013
+Time spent: 1
+-->
+<!-- Compressed CSS -->
+
+<!-- Compressed CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+<!-- Compressed JavaScript -->
+<title> foundation of foundations</title>
+<h2> Foundation Overview</h2>
+<p>Foundation is a highly customizable front end framework built with sass (an extension of css), html, and JS. Sass stands for "Syntactically Awesome Style Sheets"
+  and adds features such as nesting and variables to stylesheets and allows for easy customization of foundation componenets.
+  Files created using SASS are processed to css files, and is why this page utilizes foundation with cdn without error.
+   Below are just some examples of built in foundation features.
+</p>
+
+<h2>Grids! </h2>
+<p> The most interesting feature of Foundations is the XY Grid classes that help make organization easier. Defaults is that the entire width of the page is 12 cells. Shown below are somes examples from documentation (with added colors for clarity).
+  Theres a lot you can do combining grids with other features .</p>
+<h3>X-grids</h3>
+<h4> Example x-grid showcasing different cell sizes</h4>
+<code class="code-block">&lt;div class="grid-x"&gt;
+  &lt;div class="cell" style="background-color: aqua;">full width cell &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="grid-x"&gt;
+  &lt;div class="cell small-6" style="background-color: coral;">6 cells &lt;/div&gt;
+ &lt;/div&gt;
+&lt; div class="grid-x"&gt;
+  &lt;div class="cell medium-6 large-4" style="background-color: beige;">12/6/4 cells&lt;/div&gt;
+  &lt;div class="cell medium-6 large-8" style="background-color: darkgoldenrod;">12/6/8 cells&lt;/div&gt;
+&lt;/div&gt;
+</code>
+<div class="grid-x" >
+  <div class="cell" style="background-color: aqua;">full width cell</div>
+</div>
+<div class="grid-x">
+  <div class="cell small-6" style="background-color: coral;">6 cells</div>
+</div>
+<div class="grid-x">
+  <div class="cell medium-6 large-4" style="background-color: beige;">12/6/4 cells</div>
+  <div class="cell medium-6 large-8" style="background-color: darkgoldenrod;">12/6/8 cells</div>
+</div>
+<br>
+<div class="callout secondary">
+
+<h5>What is the purpose of medium-6 large-4 and all these numbers??</h5>
+<p>The XY grid is built to adapt to different screen sizes, and for any page the width of the entire page will be 12 cells.
+   So having a medium-6 and a large-4 allows you to
+  control how large each cell will be on a different device. The 12/6/4 cell will be 6 cells wide on a medium page and 4 cells wide on a large page. You can see the medium-6 size change at play if you shrink the window from full screen.</p>
+</div>
+
+<h4>With grids you can have both padding and margins</h3>
+<code class="code-block">
+  &lt;div class="grid-x grid-margin-x"&gt;
+    &lt;div class="cell medium-6 large-4" style="background-color: aqua;"&gt;12/6/4 cells&lt;/div&gt;
+    &lt;div class="cell medium-6 large-8" style="background-color: coral;"&gt;12/6/8 cells&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="grid-x grid-padding-x"&gt;
+    &lt;div class="cell medium-6 large-4" style="background-color: beige;">12/6/4 cells&lt;/div&gt;
+    &lt;div class="cell medium-6 large-8" style="background-color: darkgoldenrod;">12/6/8 cells&lt;/div&gt;
+  &lt;/div&gt;
+</code>
+<div class="grid-x grid-margin-x">
+  <div class="cell medium-6 large-4" style="background-color: aqua;">12/6/4 cells</div>
+  <div class="cell medium-6 large-8" style="background-color: coral;">12/6/8 cells</div>
+</div>
+<div class="grid-x grid-padding-x">
+  <div class="cell medium-6 large-4" style="background-color: beige;">12/6/4 cells</div>
+  <div class="cell medium-6 large-8" style="background-color: darkgoldenrod;">12/6/8 cells</div>
+</div>
+<br>
+<h4>
