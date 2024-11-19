@@ -6,9 +6,8 @@ Team Najeeharris
 Softdev
 20_framework-abbreviation
 2024-11013
-Time spent: 1
+Time spent: 2 hrs
 -->
-<!-- Compressed CSS -->
 
 <!-- Compressed CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css" crossorigin="anonymous">
@@ -22,6 +21,59 @@ Time spent: 1
   Files created using SASS are processed to css files, and is why this page utilizes foundation with cdn without error.
    Below are just some examples of built in foundation features.
 </p>
+
+
+<h2> Buttons and Navigation </h2>
+<p>Foundation adds a lot of new of button and navigation classes. Below are some of the most interesting / useful </p>
+<br>
+<p>Sliders!</p>
+<div class="grid-x grid-margin-x">
+  <div class="cell small-10">
+    <div class="slider" data-slider data-initial-start="50">
+      <span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutput1"></span>
+      <span class="slider-fill" data-slider-fill></span>
+    </div>
+  </div>
+  <div class="cell small-2">
+    <input type="number" id="sliderOutput1">
+  </div>
+</div>
+<br>
+<p>Button Groups. </p>
+<br>
+<p>You can use css to change the styling of groups (gaps, alignment, width, etc)</p>
+<div class="button-group">
+  <a class="secondary button">View</a>
+  <a class="success button">Edit</a>
+  <a class="warning button">Share</a>
+  <a class="alert button">Delete</a>
+</div>
+<br>
+<p> Menu</p>
+<br>
+<p>Foundation has a basic menu class, as well as multiple variations</p>
+<ul class="menu">
+  <li><a href="#">One</a></li>
+  <li><a href="#">Two</a></li>
+  <li><a href="#">Three</a></li>
+  <li><a href="#">Four</a></li>
+</ul>
+<p> Drop Down Menus</p>
+<br>
+<p>Drop Down menus utilize lists within a menu class and can be as nested as you desire.</p>
+<ul class="dropdown menu" data-dropdown-menu>
+  <li>
+    <a href="#">Item 1</a>
+    <ul class="menu">
+      <li><a href="#">Item 1A</a></li>
+      <!-- ... -->
+    </ul>
+  </li>
+  <li><a href="#">Item 2</a></li>
+  <li><a href="#">Item 3</a></li>
+  <li><a href="#">Item 4</a></li>
+</ul>
+
 
 <h2>Grids! </h2>
 <p> The most interesting feature of Foundations is the XY Grid classes that help make organization easier. Defaults is that the entire width of the page is 12 cells. Shown below are somes examples from documentation (with added colors for clarity).
@@ -79,21 +131,3 @@ Time spent: 1
   <div class="cell medium-6 large-8" style="background-color: darkgoldenrod;">12/6/8 cells</div>
 </div>
 <br>
-<h4>Autosizing </h4>
-
-
-<div class="grid-x grid-margin-x">
-  <div class="cell small-4">4 cells</div>
-  <div class="cell auto">Whatever's left!</div>
-</div>
-
-<div class="grid-x grid-margin-x">
-  <div class="cell small-4">4 cells</div>
-  <div class="cell auto">Whatever's left!</div>
-  <div class="cell auto">Whatever's left!</div>
-</div>
-
-<div class="grid-x grid-margin-x">
-  <div class="cell shrink">Shrink!</div>
-  <div class="cell auto">Expand!</div>
-</div>
