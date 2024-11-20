@@ -25,4 +25,4 @@ Time spent:
 
 
 ### q1 (At this point, which FEF do you prefer, and why? Your answer to this Q should be the only portion of your submission that differs from that of your teammate.)
-Framewor
+I think currently I lean torwards tailwind for the customization. The problem with framework and bootstrap is that the customization is more complicated and requires multiple files and learning how to use SASS / editing a seperate css file.
