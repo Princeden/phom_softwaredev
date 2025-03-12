@@ -1,0 +1,47 @@
+<!--
+RPMS -
+SoftDev
+P00
+2024-00-00
+time spent: 0 hrs
+-->
+
+<html>
+
+  <head>
+    <title> HomePage </title>
+  </head>
+
+  <body>
+    <h1>
+        Welcome to your HomePage {{ user }}!
+    </h1>
+    <h3> Create a story</h3>
+    <form action="/create_story" method="POST">
+      <label for="title"><b>Title</b></label>
+      <input type="text" placeholder="title" name="title" >
+  
+      <label for="content"><b>Content</b></label>
+      <input type="content" placeholder="content" name="content">
+      <button type="submit" name="sub1" value="submit">Submit</button>
+    </form>
+  <p> 
+    <a href="/edit_story">Contribute to a Story</a>
+</p>
+  <p> 
+      <a href="/logout">Log Out </a>
+      
+  </p>
+  
+
+
+  <h2> All Current Stories</h2>
+    {% for story in all_stories %}
+    <h3> {{story['title']}} </h3> <br>
+
+     <p>{{story['content']}}</p>
+     
+    <br>
+
+    {%endfor%}
+  </body> 
