@@ -4,28 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Welcome to My Flask Website</h1>
-    {% if current_user.is_authenticated %}
-        <p>Hello, {{ current_user.username }}!</p>
-        <a href="{{ url_for('logout') }}">Logout</a>
-        <a href="{{ url_for('add_story') }}">Add Story</a>
-    {% else %}
-        <a href="{{ url_for('login') }}">Login</a>
-        <a href="{{ url_for('register') }}">Register</a>
-    {% endif %}
-    
-    <h2>Stories</h2>
-    {% for story in stories %}
-        <div>
-            <h3>{{ story.title }}</h3>
-            <p>{{ story.content }}</p>
-            <p><strong>Author:</strong> {{ story.author.username }}</p>
-            {% if current_user.is_authenticated and current_user.id != story.author_id %}
-                <a href="{{ url_for('edit_story', story_id=story.id) }}">Edit Story</a>
-            {% endif %}
-        </div>
-    {% endfor %}
+    <header>
+        <h1>Welcome to My Flask Website</h1>
+    </header>
+    <div class="container">
+        {% if current_user.is_authenticated %}
+            <p>Hello, {{ current_user.username }}!</p>
+            <a href="{{ url_for('logout') }}">Logout</a>
+            <a href="{{ url_for('add_story') }}">Add Story</a>
+        {% else %}
+            <a href="{{ url_for('login') }}">Login</a>
+            <a href="{{ url_for('register') }}">Register</a>
+        {% endif %}
+        
+        <h2>Stories</h2>
+        {% for story in stories %}
+            <div class="story">
+                <h3>{{ story.title }}</h3>
+                <p>{{ story.content }}</p>
+                <p><strong>Author:</strong> {{ story.author.username }}</p>
+                {% if story.contributions %}
+                    <h4>Contributions:</h4>
+                    {% for contribution in story.contributions %}
+                        <div class="contribution">
+                            <p>{{ contribution.content }}</p>
+                            <p><strong>Contributor:</strong> {{ contribution.contributor.username }}</p>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+                {% if current_user.is_authenticated and current_user.id != story.author_id %}
+                    <a href="{{ url_for('edit_story', story_id=story.id) }}">Edit Story</a>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+    <footer>
+        <p>&copy; 2025 My Flask Website</p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white; /* White background */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Default text color */
+}
+
+header, footer {
+    background-color: #003366; /* Dark blue background */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #B22234; /* Red color for headers */
+}
+
+a {
+    color: #003366; /* Dark blue color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea, form button {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #003366; /* Dark blue border */
+}
+
+form button {
+    background-color: #B22234; /* Red background */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #990000; /* Darker red on hover */
+}
+
+.story, .contribution {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+.story h3, .contribution h4 {
+    margin-top: 0;
+}
+
+footer {
+    margin-top: 2rem;
+}

@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Story</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Add a New Story</h1>
-    <form method="POST">
-        <input type="text" name="title" placeholder="Title" required>
-        <textarea name="content" placeholder="Your story here..." required></textarea>
-        <button type="submit">Submit</button>
-    </form>
+    <header>
+        <h1>Add a New Story</h1>
+    </header>
+    <div class="container">
+        <form method="POST">
+            <input type="text" name="title" placeholder="Title" required>
+            <textarea name="content" placeholder="Your story here..." required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2025 My Flask Website</p>
+    </footer>
 </body>
 </html>

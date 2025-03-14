@@ -1,8 +1,16 @@
 DISCO:
+- copilot cites the repos its drawing from
+- prefers to use complicated libraries like sql alchemy
+- I asked it a more abstract design question, make my website more patriotic and it interpretered that and made working css 
+
 
 Q/C/C:
 some areas of interest...
 q0: How many tries did it take to "get it right?"
-q1: Did you catch any errors? If so, how did you notice, and what did you do?
-q2: 
+I did it in small pieces, and it took me around 5 messages to get a working story app.
 
+q1: Did you catch any errors? If so, how did you notice, and what did you do?
+I caught an error with running the app because of library requirements, but I was able to tell copilot to fix it and it did!
+
+q2: 
+ 
